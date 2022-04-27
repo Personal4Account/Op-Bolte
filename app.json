@@ -18,12 +18,26 @@
       "required": false,
       "value": ""
     },
+    "BOT_USERNAME": {
+      "description": "fill with your bot username from @BotFather Note put without '@' ",
+      "required": true
+    },
     "API_ID": {
       "description": "App ID from my.telegram.org/apps",
       "required": true
     },
     "API_HASH": {
       "description": "App hash from my.telegram.org/apps",
+      "required": true
+    },
+    "GROUP_SUPPORT": {
+      "description": "PUT YOUR group username without @.",
+      "value": "StrayCoderSupport",
+      "required": true
+    },
+    "UPDATES_CHANNEL": {
+      "description": "PUT YOUR channel username without @.",
+      "value": "StrayCoder",
       "required": true
     },
     "SUDO_USERS": {
@@ -33,7 +47,7 @@
     "DURATION_LIMIT": {
       "description": "Max audio duration limit for downloads (minutes).",
       "required": true,
-      "value": "10"
+      "value": "120"
     }
   }
 }
