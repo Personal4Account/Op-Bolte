@@ -148,7 +148,7 @@ async def play(_, message: Message):
     if audio:
         if round(audio.duration / 60) > DURATION_LIMIT:
             raise DurationLimitError(
-                f"**❰ ° 𝐒𝐨𝐧𝐠 🎸 ° ❱ 𝐋𝐨𝐧𝐠𝐞𝐫 𝐓𝐡𝐚𝐧 {DURATION_LIMIT} 𝐌𝐢𝐧𝐮𝐭𝐞'𝐒 𝐀𝐫𝐞𝐧'𝐭 𝐀𝐥𝐥𝐨𝐰𝐞𝐝 𝐓𝐨 𝐏𝐥𝐚𝐲 ▶ ❤️🥀**"
+                f"**^ 𝐒𝐨𝐧𝐠 🎸 𝐋𝐨𝐧𝐠𝐞𝐫 𝐓𝐡𝐚𝐧 𝐌𝐢𝐧𝐮𝐭𝐞𝐬 {DURATION_LIMIT} ⌚️ 𝐍𝐨𝐭 𝐀𝐥𝐥𝐨𝐰𝐞𝐝 ❌ 𝐓𝐨 𝐏𝐥𝐚𝐲 ^**"
             )
 
         file_name = get_file_name(audio)
@@ -268,7 +268,7 @@ async def play(_, message: Message):
 
         if (dur / 60) > DURATION_LIMIT:
             await lel.edit(
-                f"**❰ ° 𝐒𝐨𝐧𝐠 🎸 ° ❱ 𝐋𝐨𝐧𝐠𝐞𝐫 𝐓𝐡𝐚𝐧 {DURATION_LIMIT} 𝐌𝐢𝐧𝐮𝐭𝐞'𝐒 𝐀𝐫𝐞𝐧'𝐭 𝐀𝐥𝐥𝐨𝐰𝐞𝐝 𝐓𝐨 𝐏𝐥𝐚𝐲 ▶ ❤️🥀**"
+                f"**^ 𝐒𝐨𝐧𝐠 🎸 𝐋𝐨𝐧𝐠𝐞𝐫 𝐓𝐡𝐚𝐧 𝐌𝐢𝐧𝐮𝐭𝐞𝐬 {DURATION_LIMIT} ⌚️ 𝐍𝐨𝐭 𝐀𝐥𝐥𝐨𝐰𝐞𝐝 ❌ 𝐓𝐨 𝐏𝐥𝐚𝐲 ^**"
             )
             return
         requested_by = message.from_user.first_name
@@ -336,7 +336,7 @@ async def play(_, message: Message):
 
         if (dur / 60) > DURATION_LIMIT:
             await lel.edit(
-                f"**❰ ° 𝐒𝐨𝐧𝐠 🎸 ° ❱ 𝐋𝐨𝐧𝐠𝐞𝐫 𝐓𝐡𝐚𝐧 {DURATION_LIMIT} 𝐌𝐢𝐧𝐮𝐭𝐞'𝐒 𝐀𝐫𝐞𝐧'𝐭 𝐀𝐥𝐥𝐨𝐰𝐞𝐝 𝐓𝐨 𝐏𝐥𝐚𝐲 ▶ ❤️🥀**"
+                f"**^ 𝐒𝐨𝐧𝐠 🎸 𝐋𝐨𝐧𝐠𝐞𝐫 𝐓𝐡𝐚𝐧 𝐌𝐢𝐧𝐮𝐭𝐞𝐬 {DURATION_LIMIT} ⌚️ 𝐍𝐨𝐭 𝐀𝐥𝐥𝐨𝐰𝐞𝐝 ❌ 𝐓𝐨 𝐏𝐥𝐚𝐲 ^**"
             )
             return
         requested_by = message.from_user.first_name
