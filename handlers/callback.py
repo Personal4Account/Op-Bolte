@@ -41,26 +41,24 @@ async def start_op(_, query: CallbackQuery):
     )
 
 
-@Client.on_callback_query(filters.regex("command_list"))
+@Client.on_callback_query(filters.regex("bot_about"))
 @check_blacklist()
 async def commands_set(_, query: CallbackQuery):
     user_id = query.from_user.id
     await query.answer("commands menu")
     await query.edit_message_text(
-        f"""✨ **Hello [{query.message.chat.first_name}](tg://user?id={query.message.chat.id}) !**
-» Check out the menu below to read the module information & see the list of available Commands !
-All commands can be used with (`! / .`) handler""",
+        f"""**^ 📀 𝐂𝐥𝐢𝐜𝐤 𝐎𝐧 𝐓𝐡𝐞 𝐁𝐮𝐭𝐭𝐨𝐧𝐬 𝐆𝐢𝐯𝐞𝐧 𝐁𝐞𝐥𝐨𝐰 </ 𝐓𝐨 𝐊𝐧𝐨𝐰 𝐀𝐛𝐨𝐮𝐭 𝐀𝐥𝐥 𝐓𝐡𝐞 𝐈𝐧𝐟𝐨𝐫𝐦𝐚𝐭𝐢𝐨𝐧 𝐀𝐛𝐨𝐮𝐭 𝐓𝐡𝐞 𝐁𝐨𝐭 ^
+
+𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐝 𝐁𝐲 : 
+@Its_romeoo | @itz_xoxo**""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("👮🏻‍♀️ Admins Commands", callback_data="admin_command"),
+                    InlineKeyboardButton("^ 𝐅𝐮𝐥𝐥 𝐈𝐧𝐟𝐨 ⚙", callback_data="bot_info"),
                 ],[
-                    InlineKeyboardButton("👩🏻‍💼 Users Commands", callback_data="user_command"),
+                    InlineKeyboardButton("^ 𝐒𝐞𝐭𝐔𝐩❗️", callback_data="bot_setup"),
                 ],[
-                    InlineKeyboardButton("Sudo Commands", callback_data="sudo_command"),
-                    InlineKeyboardButton("Owner Commands", callback_data="owner_command"),
-                ],[
-                    InlineKeyboardButton("🔙 Go Back", callback_data="home_start")
+                    InlineKeyboardButton("⬅️ 𝐁𝐚𝐜𝐤", callback_data="bot_start")
                 ],
             ]
         ),
