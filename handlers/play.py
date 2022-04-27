@@ -168,11 +168,11 @@ async def play(_, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                            text="• 𝐆𝐫𝐨𝐮𝐩",
+                            text="❰𝗚𝗿𝗼𝘂𝗽❱",
                             url=f"https://t.me/{GROUP_SUPPORT}"),
                             
                     InlineKeyboardButton(
-                            text="• 𝐂𝐡𝐚𝐧𝐧𝐞𝐥",
+                            text="❰𝗖𝗵𝗮𝗻𝗻𝗲𝗹❱",
                             url=f"https://t.me/{UPDATES_CHANNEL}")
                ],
             
@@ -212,11 +212,11 @@ async def play(_, message: Message):
 
                [
                     InlineKeyboardButton(
-                            text="• 𝐆𝐫𝐨𝐮𝐩",
+                            text="❰𝗚𝗿𝗼𝘂𝗽❱",
                             url=f"https://t.me/{GROUP_SUPPORT}"),
                             
                     InlineKeyboardButton(
-                            text="• 𝐂𝐡𝐚𝐧𝐧𝐞𝐥",
+                            text="❰𝗖𝗵𝗮𝗻𝗻𝗲𝗹❱",
                             url=f"https://t.me/{UPDATES_CHANNEL}")
                ],
 
@@ -233,11 +233,11 @@ async def play(_, message: Message):
 
                [
                     InlineKeyboardButton(
-                            text="• 𝐆𝐫𝐨𝐮𝐩",
+                            text="❰𝗚𝗿𝗼𝘂𝗽❱",
                             url=f"https://t.me/{GROUP_SUPPORT}"),
                             
                     InlineKeyboardButton(
-                            text="• 𝐂𝐡𝐚𝐧𝐧𝐞𝐥",
+                            text="❰𝗖𝗵𝗮𝗻𝗻𝗲𝗹❱",
                             url=f"https://t.me/{UPDATES_CHANNEL}")
                ],
 
@@ -292,11 +292,11 @@ async def play(_, message: Message):
 
                [
                     InlineKeyboardButton(
-                            text="• 𝐆𝐫𝐨𝐮𝐩",
+                            text="❰𝗚𝗿𝗼𝘂𝗽❱",
                             url=f"https://t.me/{GROUP_SUPPORT}"),
                             
                     InlineKeyboardButton(
-                            text="• 𝐂𝐡𝐚𝐧𝐧𝐞𝐥",
+                            text="❰𝗖𝗵𝗮𝗻𝗻𝗲𝗹❱",
                             url=f"https://t.me/{UPDATES_CHANNEL}")
                ],
 
