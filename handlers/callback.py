@@ -62,7 +62,6 @@ async def commands_set(_, query: CallbackQuery):
                     InlineKeyboardButton("⬅️ 𝐁𝐚𝐜𝐤", callback_data="bot_start")
                 ],
             ]
-        ),
     )
 
 
