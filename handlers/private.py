@@ -20,27 +20,27 @@ async def start_(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                            text="• 𝐂𝐥𝐢𝐜𝐤 𝐇𝐞𝐫𝐞 𝐓𝐨 𝐀𝐝𝐝 𝐌𝐞",
-                            url=f"https://t.me/{BOT_USERNAME}?startgroup=true")
-               ],
-               [
+                        "• 𝐂𝐥𝐢𝐜𝐤 𝐇𝐞𝐫𝐞 𝐓𝐨 𝐀𝐝𝐝 𝐌𝐞",
+                        url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
+                    )
+                ],
+                [
                     InlineKeyboardButton(
-                            text="• 𝐒𝐮𝐩𝐩𝐨𝐫𝐭",
-                            url=f"https://t.me/{GROUP_SUPPORT"),
-                            
+                        "• 𝐒𝐮𝐩𝐩𝐨𝐫𝐭", url=f"https://t.me/{GROUP_SUPPORT}"
+                    ),
                     InlineKeyboardButton(
-                            text="• 𝐔𝐩𝐝𝐚𝐭𝐞𝐬",
-                            url=f"https://t.me/{UPDATES_CHANNEL")
-               ],
-               [
-                        InlineKeyboardButton(
-                            text="• 𝐒𝐞𝐭𝐮𝐩 & 𝐈𝐧𝐟𝐨𝐦𝐚𝐭𝐢𝐨𝐧",
-                            url=f" ")
-                   
-                ]
+                        "• 𝐔𝐩𝐝𝐚𝐭𝐞𝐬", url=f"https://t.me/{UPDATES_CHANNEL}"
+                    ),
+                ],
+                [
+                    InlineKeyboardButton(
+                        "• 𝐒𝐞𝐭𝐮𝐩 & 𝐈𝐧𝐟𝐨𝐦𝐚𝐭𝐢𝐨𝐧", url="https://github.com/SJMxADITI/TrickyAbhi-Music"
+                    )
+                ],
             ]
-        )
-    
+        ),
+    ) 
+  
 
 @Client.on_message(command(["repo"]) & filters.group & ~filters.edited)
 async def help(client: Client, message: Message):
