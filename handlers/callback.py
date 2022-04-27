@@ -7,6 +7,12 @@ from config import (
 )
 
 
+@Client.on_callback_query(filters.regex("cb_start"))
+async def start_op(_, query: CallbackQuery):
+        await query.edit_message_text(
+              f"""
+
+
 @Client.on_callback_query(filters.regex("command_list"))
 @check_blacklist()
 async def commands_set(_, query: CallbackQuery):
