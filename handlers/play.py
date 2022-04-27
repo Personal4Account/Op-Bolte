@@ -23,6 +23,12 @@ from pytgcalls import StreamType
 from pytgcalls.types.input_stream import InputAudioStream
 from pytgcalls.types.input_stream import InputStream
 
+from config import (
+    BOT_USERNAME,
+    GROUP_SUPPORT,
+    UPDATES_CHANNEL,
+)
+
 
 def transcode(filename):
     ffmpeg.input(filename).output("input.raw", format='s16le', acodec='pcm_s16le', ac=2, ar='48k').overwrite_output().run() 
