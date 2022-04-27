@@ -63,3 +63,64 @@ async def commands_set(_, query: CallbackQuery):
             ]
         ),
     )
+
+
+@Client.on_callback_query(filters.regex("bot_code"))
+async def bot_set(_, query: CallbackQuery):
+    user_id = query.from_user.id
+    await query.answer("Source Code")
+    await query.edit_message_text(
+        f"""**^ 𝐔𝐩𝐥𝐨𝐚𝐝𝐢𝐧𝐠 𝐒𝐨𝐨𝐧 🎸 𝐓𝐡𝐞 𝐒𝐨𝐮𝐫𝐜𝐞 𝐂𝐨𝐝𝐞 𝐨𝐟 𝐭𝐡𝐞 𝐁𝐨𝐭 𝐢𝐬 𝐑𝐞𝐚𝐝𝐲 </ 𝐈𝐟 𝐰𝐞 𝐆𝐞𝐭 𝐆𝐨𝐨𝐝 𝐑𝐞𝐬𝐩𝐨𝐧𝐬𝐞 𝐅𝐫𝐨𝐦 𝐓𝐡𝐢𝐬 𝐁𝐨𝐭 , 𝐓𝐡𝐞 𝐒𝐨𝐮𝐫𝐜𝐞 𝐂𝐨𝐝𝐞 𝐏𝐫𝐨𝐯𝐢𝐝𝐞𝐝 𝐓𝐨 𝐘𝐨𝐮 𝐄𝐚𝐫𝐥𝐲 𝐀𝐬 𝐏𝐨𝐬𝐬𝐢𝐛𝐥𝐞 ✅ ^**""",
+        reply_markup=InlineKeyboardMarkup(
+            [[InlineKeyboardButton("⬅️ 𝐁𝐚𝐜𝐤", callback_data="bot_about")]]
+        ),
+    )
+
+
+@Client.on_callback_query(filters.regex("bot_setup"))
+async def owner_set(_, query: CallbackQuery):
+    user_id = query.from_user.id
+    await query.answer("Full Setup")
+    await query.edit_message_text(
+        f"""**1 = 𝐀𝐝𝐝 𝐭𝐡𝐢𝐬 𝐏𝐨𝐰𝐞𝐫𝐅𝐮𝐥 𝐁𝐨𝐭 𝐈𝐧 𝐘𝐨𝐮𝐫 𝐆𝐫𝐨𝐮𝐩 ^ 𝐓𝐡𝐞𝐧 𝐏𝐫𝐨𝐦𝐨𝐭𝐞 𝐀𝐬 𝐀𝐝𝐦𝐢𝐧 𝐖𝐢𝐭𝐡 𝐍𝐞𝐞𝐝𝐞𝐝 𝐏𝐨𝐰𝐞𝐫𝐬 & 𝐂𝐚𝐥𝐥 𝐀 𝐀𝐝𝐦𝐢𝐧 𝐓𝐨 𝐒𝐞𝐧𝐝 /play 𝐂𝐨𝐦𝐦𝐚𝐧𝐝 𝐓𝐨 𝐈𝐧𝐯𝐢𝐭𝐞 𝐓𝐡𝐞 𝐌𝐮𝐬𝐢𝐜 𝐀𝐬𝐬𝐢𝐬𝐭𝐚𝐧𝐭 𝐈𝐧 𝐓𝐡𝐞 𝐆𝐫𝐨𝐮𝐩 🎸 
+
+2 = 𝐀𝐟𝐭𝐞𝐫 𝐉𝐨𝐢𝐧𝐢𝐧𝐠 𝐀𝐬𝐬𝐢𝐬𝐭𝐚𝐧𝐭 𝐏𝐥𝐚𝐲 𝐘𝐨𝐮𝐫 𝐅𝐚𝐯𝐨𝐮𝐫𝐢𝐭𝐞 𝐒𝐨𝐧𝐠𝐬 𝐀𝐧𝐝 𝐄𝐧𝐣𝐨𝐲 𝐈𝐧 𝐭𝐡𝐞 𝐕𝐨𝐢𝐜𝐞 𝐂𝐡𝐚𝐭 !! ^ #𝐒𝐭𝐫𝐚𝐲𝐂𝐨𝐝𝐞𝐫 ❤️ 𝐒𝐞𝐫𝐯𝐞𝐫 <3 
+
+𝐏𝐨𝐰𝐞𝐫𝐞𝐝 𝐁𝐲 : @StrayCoder 
+𝐁𝐢𝐠 𝐓𝐡𝐚𝐧𝐤𝐬 𝐓𝐨 @itz_xoxo ^ 🤝**""",
+        reply_markup=InlineKeyboardMarkup(
+            [[InlineKeyboardButton("⬅️ 𝐁𝐚𝐜𝐤", callback_data="bot_about")]]
+        ),
+    )
+
+
+@Client.on_callback_query(filters.regex("bot_commands"))
+async def owner_set(_, query: CallbackQuery):
+    user_id = query.from_user.id
+    await query.answer("Commands")
+    await query.edit_message_text(
+        f"""**⭐️ 𝗕𝗮𝘀𝗶𝗰 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀 :
+
+/play (song Name) - Start streaming Song in the voice chat of the Group / Channel
+
+/song (Song Name) - Download the song from the Stray Server <3
+
+/repo - Get the source code of the Bot
+
+/help , /commands - Get all the commands of the Bot
+
+
+⭐️ 𝗔𝗱𝗺𝗶𝗻𝘀 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀 :
+
+/skip - Skips the Current Track in the voice chat and starts playing next song 
+
+/pause /resume - Pause and Resume the Song in voice chat
+
+/end /stop - The assistant of the Player disconnects from the voice Chat
+
+
+Powered By : @StrayCoder**""",
+        reply_markup=InlineKeyboardMarkup(
+            [[InlineKeyboardButton("⬅️ 𝐁𝐚𝐜𝐤", callback_data="bot_about")]]
+        ),
+    )
