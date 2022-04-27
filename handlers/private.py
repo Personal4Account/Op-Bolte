@@ -48,10 +48,10 @@ async def start_(client: Client, message: Message):
     ) 
 
 
-@Client.on_message(command("[help]") & filters.private & ~filters.edited)
+@Client.on_message(command("help") & ~filters.edited)
 async def help_(client: Client, message: Message):
     await message.reply_text(
-        f"""**⭐️ 𝗕𝗮𝘀𝗶𝗰 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀 :
+        f"""⭐️ 𝗕𝗮𝘀𝗶𝗰 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀 :
 
 /play (song Name) - Start streaming Song in the voice chat of the Group / Channel
 
@@ -73,15 +73,15 @@ async def help_(client: Client, message: Message):
 
 
 Powered By : @StrayCoder
-**""",
+""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "• 𝐒𝐮𝐩𝐩𝐨𝐫𝐭", url=f"https://t.me/{GROUP_SUPPORT}"
+                        "❰𝗚𝗿𝗼𝘂𝗽❱", url=f"https://t.me/{GROUP_SUPPORT}"
                     ),
                     InlineKeyboardButton(
-                        "• 𝐔𝐩𝐝𝐚𝐭𝐞𝐬", url=f"https://t.me/{UPDATES_CHANNEL}"
+                        "❰𝗖𝗵𝗮𝗻𝗻𝗲𝗹❱", url=f"https://t.me/{UPDATES_CHANNEL}"
                     )
                 ],
             ]
