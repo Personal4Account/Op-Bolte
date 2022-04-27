@@ -53,6 +53,7 @@ async def commands_set(_, query: CallbackQuery):
 @Its_romeoo | @itz_xoxo**""",
         reply_markup=InlineKeyboardMarkup(
             [
+                [
                     InlineKeyboardButton("^ 𝐅𝐮𝐥𝐥 𝐈𝐧𝐟𝐨 🤖", callback_data="bot_info"),
                     InlineKeyboardButton("^ 𝐒𝐞𝐭𝐔𝐩❗️", callback_data="bot_setup")
                 ],[
@@ -62,6 +63,7 @@ async def commands_set(_, query: CallbackQuery):
                     InlineKeyboardButton("⬅️ 𝐁𝐚𝐜𝐤", callback_data="bot_start")
                 ],
             ]
+        ),
     )
 
 
