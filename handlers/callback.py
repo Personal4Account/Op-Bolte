@@ -42,7 +42,6 @@ async def start_op(_, query: CallbackQuery):
 
 
 @Client.on_callback_query(filters.regex("bot_about"))
-@check_blacklist()
 async def commands_set(_, query: CallbackQuery):
     user_id = query.from_user.id
     await query.answer("commands menu")
