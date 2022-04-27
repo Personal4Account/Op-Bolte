@@ -5,6 +5,12 @@ from helpers.filters import command
 from pyrogram import Client, filters
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 
+from config import (
+    BOT_USERNAME,
+    GROUP_SUPPORT,
+    UPDATES_CHANNEL,
+)
+
 
 
 @Client.on_message(command("start") & filters.private & ~filters.edited)
