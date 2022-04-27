@@ -44,7 +44,7 @@ async def start_op(_, query: CallbackQuery):
 @Client.on_callback_query(filters.regex("bot_about"))
 async def commands_set(_, query: CallbackQuery):
     user_id = query.from_user.id
-    await query.answer("commands menu")
+    await query.answer("Bot About")
     await query.edit_message_text(
         f"""**^ 📀 𝐂𝐥𝐢𝐜𝐤 𝐎𝐧 𝐓𝐡𝐞 𝐁𝐮𝐭𝐭𝐨𝐧𝐬 𝐆𝐢𝐯𝐞𝐧 𝐁𝐞𝐥𝐨𝐰 </ 𝐓𝐨 𝐊𝐧𝐨𝐰 𝐀𝐛𝐨𝐮𝐭 𝐀𝐥𝐥 𝐓𝐡𝐞 𝐈𝐧𝐟𝐨𝐫𝐦𝐚𝐭𝐢𝐨𝐧 𝐀𝐛𝐨𝐮𝐭 𝐓𝐡𝐞 𝐁𝐨𝐭 ^
 
@@ -100,7 +100,7 @@ async def owner_set(_, query: CallbackQuery):
     user_id = query.from_user.id
     await query.answer("Commands")
     await query.edit_message_text(
-        f"""**⭐️ 𝗕𝗮𝘀𝗶𝗰 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀 :
+        f"""⭐️ 𝗕𝗮𝘀𝗶𝗰 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀 :
 
 /play (song Name) - Start streaming Song in the voice chat of the Group / Channel
 
@@ -120,7 +120,8 @@ async def owner_set(_, query: CallbackQuery):
 /end /stop - The assistant of the Player disconnects from the voice Chat
 
 
-Powered By : @StrayCoder**""",
+Powered By : @StrayCoder
+""",
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton("⬅️ 𝐁𝐚𝐜𝐤", callback_data="bot_about")]]
         ),
@@ -132,12 +133,13 @@ async def owner_set(_, query: CallbackQuery):
     user_id = query.from_user.id
     await query.answer("Bot Information")
     await query.edit_message_text(
-        f"""**𝐈 𝐚𝐦 𝐚𝐧 𝐒𝐮𝐩𝐞𝐫𝐅𝐚𝐬𝐭 𝐓𝐞𝐥𝐞𝐆𝐫𝐚𝐦 𝐏𝐥𝐚𝐲𝐞𝐫 𝐓𝐨 𝐏𝐥𝐚𝐲 𝐋𝐚𝐠 𝐟𝐫𝐞𝐞 & 𝐇𝐢𝐠𝐡 𝐐𝐮𝐚𝐥𝐢𝐭𝐲 𝐌𝐮𝐬𝐢𝐜 𝐈𝐧 𝐘𝐨𝐮𝐫 𝐆𝐫𝐨𝐮𝐩 𝐕𝐨𝐢𝐜𝐞 𝐂𝐡𝐚𝐭 __ 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐝 𝐁𝐲 𝐀 𝐍𝐨𝐨𝐛 𝐓𝐞𝐚𝐦 !! (𝐲) 𝐀𝐝𝐝 𝐦𝐞 𝐭𝐨 𝐲𝐨𝐮𝐫 𝐆𝐫𝐨𝐮𝐩 𝐟𝐨𝐫 𝐅𝐫𝐞𝐞 </
+        f"""**𝐈 𝐚𝐦 𝐚𝐧 𝐒𝐮𝐩𝐞𝐫𝐅𝐚𝐬𝐭 𝐓𝐞𝐥𝐞𝐆𝐫𝐚𝐦 𝐏𝐥𝐚𝐲𝐞𝐫 𝐓𝐨 𝐏𝐥𝐚𝐲 𝐋𝐚𝐠 𝐟𝐫𝐞𝐞 & 𝐇𝐢𝐠𝐡 𝐐𝐮𝐚𝐥𝐢𝐭𝐲 𝐌𝐮𝐬𝐢𝐜 𝐈𝐧 𝐘𝐨𝐮𝐫 𝐆𝐫𝐨𝐮𝐩 𝐕𝐨𝐢𝐜𝐞 𝐂𝐡𝐚𝐭 __ 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐝 𝐁𝐲 𝐀 𝐍𝐨𝐨𝐛 𝐓𝐞𝐚𝐦 !! (𝐲) 𝐀𝐝𝐝 𝐦𝐞 𝐭𝐨 𝐲𝐨𝐮𝐫 𝐆𝐫𝐨𝐮𝐩 𝐟𝐨𝐫 𝐅𝐫𝐞𝐞 📀
 
 ⭐️ 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐝 𝐁𝐲 : @Its_romeoo
 ⭐️ 𝐌𝐚𝐧𝐚𝐠𝐞𝐝 𝐁𝐲 : @itz_xoxo
 
-(𝐲) #𝐒𝐭𝐫𝐚𝐲_𝐒𝐞𝐫𝐯𝐞𝐫 😎🤘 𝐌𝐮𝐬𝐢𝐜**""",
+(𝐲) #𝐒𝐭𝐫𝐚𝐲_𝐒𝐞𝐫𝐯𝐞𝐫 😎🤘 𝐌𝐮𝐬𝐢𝐜
+**""",
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton("⬅️ 𝐁𝐚𝐜𝐤", callback_data="bot_about")]]
         ),
