@@ -20,21 +20,21 @@ async def start_(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                            text="𝐂𝐡𝐚𝐧𝐧𝐞𝐥📡",
+                            text="• 𝐂𝐥𝐢𝐜𝐤 𝐇𝐞𝐫𝐞 𝐓𝐨 𝐀𝐝𝐝 𝐌𝐞",
                             url=f"https://t.me/eSport_BOTs")
                ],
                [
                     InlineKeyboardButton(
-                            text="𝐒𝐦𝐨𝐊𝐞𝐫 🚬",
+                            text="• 𝐒𝐮𝐩𝐩𝐨𝐫𝐭",
                             url=f"https://t.me/Sanki_Owner"),
                             
                     InlineKeyboardButton(
-                            text="𝐅𝐞𝐞𝐋𝐢𝐧𝐠'𝐒 🥀",
+                            text="• 𝐔𝐩𝐝𝐚𝐭𝐞𝐬",
                             url=f"https://t.me/Smoker_Feelings")
                ],
                [
                         InlineKeyboardButton(
-                            text="𝐆𝐫𝐨𝐮𝐩⭐",
+                            text="• 𝐒𝐞𝐭𝐮𝐩 & 𝐈𝐧𝐟𝐨𝐦𝐚𝐭𝐢𝐨𝐧",
                             url=f"https://t.me/EsportClan")
                    
                 ]
