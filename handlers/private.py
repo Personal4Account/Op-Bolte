@@ -40,19 +40,44 @@ async def start_(client: Client, message: Message):
             ]
         ),
     ) 
-  
 
-@Client.on_message(command(["repo"]) & filters.group & ~filters.edited)
-async def help(client: Client, message: Message):
-    await message.reply_photo(
-        photo=f"https://te.legra.ph/file/bb7e6f59b3db29b215446.jpg",
-        caption=f"""""",
+
+@Client.on_message(command("[help]") & filters.private & ~filters.edited)
+async def help_(client: Client, message: Message):
+    await message.reply_text(
+        f"""**⭐️ 𝗕𝗮𝘀𝗶𝗰 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀 :
+
+/play (song Name) - Start streaming Song in the voice chat of the Group / Channel
+
+/song (Song Name) - Download the song from the Stray Server <3
+
+/repo - Get the source code of the Bot
+
+/help , /commands - Get all the commands of the Bot
+
+
+
+⭐️ 𝗔𝗱𝗺𝗶𝗻𝘀 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀 :
+
+/skip - Skips the Current Track in the voice chat and starts playing next song 
+
+/pause /resume - Pause and Resume the Song in voice chat
+
+/end /stop - The assistant of the Player disconnects from the voice Chat
+
+
+Powered By : @StrayCoder
+**""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "💥 Cʟɪᴄᴋ Mᴇ Tᴏ Gᴇᴛ Rᴇᴘᴏ 💞", url=f"https://github.com/EsportMusicX/SmokerMusicX")
-                ]
+                        "• 𝐒𝐮𝐩𝐩𝐨𝐫𝐭", url=f"https://t.me/{GROUP_SUPPORT}"
+                    ),
+                    InlineKeyboardButton(
+                        "• 𝐔𝐩𝐝𝐚𝐭𝐞𝐬", url=f"https://t.me/{UPDATES_CHANNEL}"
+                    )
+                ],
             ]
-        ),
+        )
     )
